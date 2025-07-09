@@ -1,4 +1,4 @@
-public class Test {
+public class ProblemOne {
     public static void main(String[] args) {
         // create a multiline string before Java 15
         String sql = String.join ("/n"
