@@ -17,8 +17,8 @@ public class ProblemOne {
                 (SELECT "public"."employee"."first_name",
                         "public"."employee"."last_name", ?
                  FROM "public"."employee"
-                 WHERE "public"."employee"."job_title" = ?);
-            """;
+                 WHERE "public"."employee"."job_title" = ?)
+    """;
 
         String json15 = """
             {
@@ -39,10 +39,10 @@ public class ProblemOne {
                     },
                 }
             }
-                """;
+                        """;
 
         System.out.println(sql + "\n");
-        System.out.println("\n" + sql15 + "\n");
+        System.out.println("\n" + sql15);
         System.out.println(json15 + "\n");
 
         }
